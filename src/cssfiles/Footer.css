@@ -1,0 +1,398 @@
+.footer-bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 1.25rem 0; /* 20px */
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-col-3 {
+  flex: 1;
+  max-width: 25%;
+  padding: 0.625rem; /* 10px */
+  text-align: center;
+}
+
+.footer-col-sm-2 {
+  flex: 1;
+  max-width: 50%;
+  padding: 0.625rem; /* 10px */
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.footer-icons {
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
+}
+
+.footer-justify-content-center {
+  justify-content: center;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Media query for small devices (tablets, 768px and down) */
+@media (max-width: 48rem) { 
+  .footer-col-3 {
+    max-width: 50%;
+  }
+}
+
+/* Media query for extra small devices (phones, 600px and down) */
+@media (max-width: 37.5rem) { /* 600px */
+  .footer-col-3,
+  .footer-col-sm-2 {
+    max-width: 100%;
+  }
+}
+
+
+  
+  /* navbar */
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar-container {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  padding: 10px 20px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-logo img {
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+/* Hamburger menu for smaller screens */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-content {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-content.open {
+    display: flex;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .nav-logo img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+  /* FAQ */
+
+  .faq{
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  }
+  .faq-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+  .faq-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .faq-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    display: none;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .faq-answer.active {
+    display: block;
+  }
+  
+
+  /* about */
+
+  .about{
+    /* background-color: #b2f3e9; */
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  }
+
+  .about-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    line-height: 1.6;
+  }
+  
+  .about-content h2 {
+    margin-top: 20px;
+  }
+  
+  .about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .about-content a {
+    color: #007bff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 10px;
+      max-width: 90%;
+    }
+  
+    .about-container h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  
+    .about-content {
+      font-size: 16px;
+    }
+  
+    .about-content h2 {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+  
+    .about-content ul {
+      padding-left: 15px;
+    }
+  }
+  
+
+  /* Uploadvid */
+  /* General reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Page container */
+.upload-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3599A4;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Form container */
+.container {
+  text-align: center;
+  background-color: #CDE8E5;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Paragraph text */
+p {
+  margin-bottom: 20px;
+  color: #666;
+  font-weight: bold;
+}
+
+/* File input styling */
+input[type="file"] {
+  margin-bottom: 15px;
+  border: 2px solid #3599A4;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #3599A4;
+}
+
+input[type="file"]::placeholder {
+  color: #999;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #95D2B3;
+}
+
+/* Button styling */
+.submit-button, .next-button {
+  background-color: #3599A4;
+  color: black;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button:hover, .next-button:hover {
+  background-color: #95D2B3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  input[type="file"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .submit-button, .next-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  input[type="file"] {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .submit-button, .next-button {
+    font-size: 10px;
+    padding: 6px;
+  }
+}

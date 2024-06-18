@@ -1,0 +1,114 @@
+/* Assuming you have a container for the main content and footer */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background-color: #9cefe3; */
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.checkbox h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.checkbox div {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox label {
+    font-size: 18px;
+}
+
+.next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f499a7;
+    color: rgb(24, 22, 24);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #ef9ca8;
+}
+
+@media (max-width: 768px) {
+    .video1 {
+        padding: 20px;
+    }
+
+    .checkbox h1 {
+        font-size: 20px;
+    }
+
+    .checkbox div {
+        margin: 0 10px;
+    }
+
+    .checkbox label {
+        font-size: 16px;
+    }
+
+    .next-button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video1 {
+        height: auto;
+    }
+
+    .checkbox h1 {
+        font-size: 18px;
+    }
+
+    .checkbox div {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .checkbox label {
+        font-size: 14px;
+    }
+
+    .next-button {
+        padding: 6px 12px;
+    }
+}
