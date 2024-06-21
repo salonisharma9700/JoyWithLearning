@@ -24,8 +24,10 @@ const Footer = () => {
         </Link>
       </div>
       <div className="footer-col-3 footer-col-sm-2">
-        <strong>Contact Us</strong>
-        <img src="images/contact-us.png" className="footer-icons" alt="Home Icon" /><br />
+        <Link to="/contact" className="footer-link">
+          <strong>Contact Us</strong>
+          <img src="images/contact-us.png" className="footer-icons" alt="Home Icon" /><br />
+        </Link>
       </div>
     </div>
   );

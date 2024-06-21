@@ -3,10 +3,10 @@ import '../cssfiles/style.css';
 
 const Home = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid home-container">
       <div className="row">
-        <img src="images/dyslexiafinal.jpg" alt="Background" className="background" />
-        <div className="overlay-text">
+        <img src="images/dyslexiafinal.jpg" alt="Background" className="home-background-image" />
+        <div className="home-overlay-text">
           <p>Supporting</p>
           <p>Your Journey with</p>
           <p>Autism and Dyslexia</p>

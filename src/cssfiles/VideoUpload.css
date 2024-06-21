@@ -191,3 +191,20 @@
     font-size: 14px; /* Adjust font size for smaller screens */
   }
 }
+
+/* contact */
+.form-group.has-error {
+  border: 1px solid #dc3545;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  display: block;
+  margin-top: 5px;
+}

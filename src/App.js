@@ -10,6 +10,7 @@ import About from './Components/About';
 import UploadVideoPage from './Components/Uploadvid';
 import MyUpload from './Components/MyUpload';
 import Form from './Components/Form';
+import Contact from './Components/Contact'
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
         <Route path='/knowmore' element={<KnowMore/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path="/faq" element={<Faq/>} />
-        {/* <Route path="/contact" element={<Contact/>} /> */}
+        <Route path="/contact" element={<Contact/>} />
         <Route path='/myupload' element={<MyUpload/>}/>
         <Route path='/upload' element={<UploadVideoPage/>}/>
         <Route path='/form' element={<Form/>}/>
