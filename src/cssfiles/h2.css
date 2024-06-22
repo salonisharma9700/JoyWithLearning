@@ -1,4 +1,4 @@
-/* CSS for Home2 Component */
+
 .ho2-container-fluid {
     /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
     position: relative;
@@ -47,7 +47,6 @@
     margin: 0;
   }
   
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .ho2-row {
       flex-direction: column;

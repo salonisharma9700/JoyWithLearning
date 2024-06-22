@@ -38,7 +38,6 @@ const Contact = ({ onSubmit }) => {
         let formValid = true;
         let newErrors = {};
 
-        // Validate form fields
         Object.keys(formData).forEach((field) => {
             validateField(field, formData[field]);
             if (!formData[field].trim()) {
@@ -49,27 +48,26 @@ const Contact = ({ onSubmit }) => {
 
         if (formValid) {
             try {
-                // Send email using Email.js
                 const emailParams = {
                     from_name: formData.name,
                     from_email: formData.email,
                     message: formData.message,
                 };
-                const serviceId = 'service_v1786bs'; // Replace with your Email.js service ID
-                const templateId = 'template_cavtrlg'; // Replace with your Email.js template ID
-                const userId = '3NQW95XFCjHuG4uZl'; // Replace with your Email.js user ID
+                const serviceId = 'service_v1786bs'; 
+                const templateId = 'template_cavtrlg';
+                const userId = '3NQW95XFCjHuG4uZl';
 
                 const response = await emailjs.send(serviceId, templateId, emailParams, userId);
                 console.log('Email sent successfully:', response);
 
-                // Clear form data and errors on successful submission
+            
                 setFormData({
                     name: '',
                     email: '',
                     message: '',
                 });
                 setErrors({});
-                onSubmit && onSubmit(); // Optional callback function after successful submission
+                onSubmit && onSubmit(); 
             } catch (error) {
                 console.error('Email sending failed:', error);
             }

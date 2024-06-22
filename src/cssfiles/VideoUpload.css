@@ -1,4 +1,4 @@
-/* Default styles for larger screens */
+
 .uploadform {
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
@@ -55,7 +55,7 @@
 .gender-group {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Ensure items wrap to the next line if necessary */
+  flex-wrap: wrap; 
 }
 
 .gender-group label {
@@ -120,7 +120,6 @@
   background-color: #5b9ade;
 }
 
-/* Media query for tablets and smaller devices */
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -147,11 +146,10 @@
   }
 
   .gender-group label {
-    margin-bottom: 10px; /* Increase space between labels */
+    margin-bottom: 10px; 
   }
 }
 
-/* Media query for mobile devices */
 @media (max-width: 576px) {
   .container {
     padding: 15px;
@@ -183,12 +181,12 @@
   }
 
   .gender-group label {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    margin-right: 10px; /* Reduce margin to fit better */
+    font-size: 14px;
+    margin-right: 10px;
   }
 
   .form-check-label {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 14px; 
   }
 }
 
