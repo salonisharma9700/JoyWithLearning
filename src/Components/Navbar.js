@@ -23,6 +23,8 @@ const Navbar = () => {
         <div className={`nav-content ${isOpen ? 'open' : ''}`}>
           <Link to="/" className="nav-link" onClick={closeMenu}><strong>Home</strong></Link>
           <Link to="/about" className="nav-link" onClick={closeMenu}><strong>About</strong></Link>
+          <Link to="/ytvid" className="nav-link" onClick={closeMenu}><strong>KnowMore</strong></Link>
+          <Link to="/upvid" className="nav-link" onClick={closeMenu}><strong>Upload</strong></Link>
           <Link to="/faq" className="nav-link" onClick={closeMenu}><strong>FAQs</strong></Link>
           <Link to="/contact" className="nav-link" onClick={closeMenu}><strong>Contact</strong></Link>
         </div>
