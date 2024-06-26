@@ -1,199 +1,81 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-body {
-    font-family: 'Merriweather Sans', sans-serif;
-    text-align: center;
-    /* overflow: hidden; */
-    /* margin: 0;
-    padding: 0; */
-    /* background-image: url("images/Dyslexia2.png");
-    background-size: cover; */
-    /* background-attachment: fixed; */
-    /* background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; */
+a {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-header{
-    border-style: ridge;
-    border-radius: 30px;
-    border-width: 4px;
+.text {
+  font-family: 'Merriweather Sans', sans-serif;
+  position: relative;
 }
 
-a{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-h1{
-    font-family: Georgia, serif;
-    font-weight: 700;
-    font-size: larger;
+.container-fluid.home-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
 }
 
-.icons{
-    width: 40%;
-    height: 60%;
+.row {
+  height: 100%;
 }
 
-strong{
-    left: 30px;
-}
-/* 
-.background{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    background-size:cover;
-    
-} */
-.container-fluid {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .row {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80vh;
-    object-fit: cover; 
-    z-index: -1; 
-    overflow: hidden;
-  }
-
-.head{
-    background-color: #9CEFE3;
-}
-.bottom-container{
-    background-color: #FFFFEB;
-    text-align: center;
-    padding: 30px 0;
-}
-.family{
-    margin-left: 10%;
-    mix-blend-mode: multiply;
-}
-.text{
-    font-family: 'Merriweather Sans', sans-serif;
-    position: relative;
-    
+.family {
+  margin-left: 10%;
+  mix-blend-mode: multiply;
 }
 
-.overlay-text {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 25%;
-    top: 25%;
-    transform: translate(-50%, -50%);
-    max-width: 540px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-weight: bold;
-    font-size: 32px;
-    color: rgb(31, 97, 106);
-    text-align: center;
-    overflow: hidden;
-    z-index: 1; 
-  }
-   
-  
- 
-  
-  .overlay-text p {
-    font-size: 2rem;
-    left:0.5rem;
-    margin: 0.5rem 0;
-    justify-content: space-evenly;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .overlay-text p {
-      font-size: 1.5rem;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .overlay-text p {
-      font-size: 1.25rem;
-    }
-  }
+.home-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-size: cover; /* Make sure the image covers the entire container */
+}
 
+.home-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 10%; /* Adjusted to keep text on the left side */
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  transform: translateY(-50%); /* Only translate vertically to keep text on the left */
+  color: white;
+  text-align: left;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.home-overlay-text p {
+  margin: 0;
+}
 
-
-  body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .container-fluid.home-container {
-    position: relative;
-    width: 100%;
-    height: 80vh; /* Full viewport height */
-    overflow: hidden;
-  }
-  
-  .row {
-    height: 100%;
-  }
-  
-  .home-background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  
+@media (max-width: 768px) {
   .home-overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    margin-left: 7rem;
-    text-align:left;
-    z-index: 2;
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .home-overlay-text p {
-    margin: 0;
-  }
-  
-  @media (max-width: 768px) {
-    .home-overlay-text {
-      font-size: 2rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .home-overlay-text {
-      top: 10%; /* Move text to the top */
-    left: 50%;
-    transform: translate(-50%, 0); /* Adjust transform to remove vertical centering */
     font-size: 1.5rem;
-     
-    }
   }
-  
+}
+
+@media (max-width: 480px) {
+  .home-overlay-text {
+    top: 9%; /* Move text to the top */
+    left: 10%; /* Keep text on the left */
+    transform: translateY(0); /* Remove vertical centering adjustment */
+    font-size: 1.2rem;
+  }
+
+  .home-background-image {
+    background-position: 50% 50%; 
+    width: 49vh;
+    
+    
+  }
+}

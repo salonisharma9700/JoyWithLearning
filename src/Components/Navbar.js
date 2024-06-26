@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../cssfiles/Footer.css';
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,4 +35,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-

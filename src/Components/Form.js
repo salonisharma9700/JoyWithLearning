@@ -89,7 +89,7 @@ const Form = ({ onSubmit, videoResponses }) => {
         <div className='uploadform'>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-md-8">
+                    <div className="col-9">
                         <div className="form-container">
                             <h1>Please fill out the form with your child's information.</h1>
                             <form onSubmit={handleSubmit}>

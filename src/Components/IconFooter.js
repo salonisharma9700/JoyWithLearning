@@ -2,7 +2,7 @@ import React from 'react';
 import '../cssfiles/Footer.css';
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const IconFooter = () => {
   return (
     <div className="footer-row footer-bottom-container footer-justify-content-center">
       <div className="footer-col-3 footer-col-sm-2">
@@ -12,7 +12,7 @@ const Footer = () => {
         </Link>
       </div>
       <div className="footer-col-3 footer-col-sm-2">
-        <Link to="/myupload" className="footer-link">
+        <Link to="/upvid" className="footer-link">
           <strong>Upload Video</strong>
           <img src="images/upload.png" className="footer-icons" alt="Home Icon" /><br />
         </Link>
@@ -33,4 +33,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default IconFooter;

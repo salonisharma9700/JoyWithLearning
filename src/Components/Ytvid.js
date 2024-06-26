@@ -84,15 +84,18 @@ const Ytvid = () => {
 
     const getPlayerOpts = () => {
         if (window.innerWidth <= 480) {
-            return { width: '100%', height: '200' };
+            return { width: '100%', height: '200' }; // Adjust height accordingly
         } else if (window.innerWidth <= 768) {
-            return { width: '100%', height: '300' };
+            return { width: '100%', height: '300' }; // Adjust height accordingly
         } else {
-            return { width: '900', height: '450' };
+            return { width: '900', height: '500' }; // Adjust height accordingly
         }
     };
+    
 
     return (
+        <div className='ytvid'>
+        <div className='row'>
         <div className='video1'>
             {!showForm ? (
                 <>
@@ -122,15 +125,19 @@ const Ytvid = () => {
                             <label htmlFor="no">No</label>
                         </div>
                     </div>
+                    <div  col-sm-3>
                     {(isCheckedYes || isCheckedNo) && (
                         <button onClick={handleNextVideo} className='next-button'>
                             {currentVideoIndex < videoUrls.length - 1 ? 'Next Video' : 'Submit'}
                         </button>
                     )}
+                    </div>
                 </>
             ) : (
                 <Form onSubmit={handleSubmit} videoResponses={videoResponses} />
             )}
+        </div>
+        </div>
         </div>
     );
 };
