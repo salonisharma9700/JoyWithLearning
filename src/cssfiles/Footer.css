@@ -79,7 +79,7 @@
   align-items: center;
   background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
   padding: 10px 20px;
-  position: relative; /* Ensure the hamburger stays in place */
+  position: relative; 
 }
 
 .nav-logo {
@@ -117,10 +117,10 @@
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  position: absolute; /* Ensure the hamburger stays in place */
-  top: 50%; /* Position at the vertical center of the navbar */
+  position: absolute; 
+  top: 50%; 
   transform: translateY(-50%);
-  right: 20px; /* Align it to the right */
+  right: 20px;
 }
 
 @media (max-width: 768px) {
@@ -129,8 +129,8 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    position: absolute; /* Adjust to overlay the entire screen */
-    top: 100%; /* Initially hidden below the navbar */
+    position: absolute; 
+    top: 100%; 
     left: 0;
     z-index: 1000;
     background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);

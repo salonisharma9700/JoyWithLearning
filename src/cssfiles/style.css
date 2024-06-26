@@ -38,15 +38,15 @@ body, html {
   top: 0;
   left: 0;
   z-index: 1;
-  background-size: cover; /* Make sure the image covers the entire container */
+  background-size: cover; 
 }
 
 .home-overlay-text {
   position: absolute;
   top: 50%;
-  left: 10%; /* Adjusted to keep text on the left side */
+  left: 10%; 
   font-family: "Comic Sans MS", "Comic Sans", cursive;
-  transform: translateY(-50%); /* Only translate vertically to keep text on the left */
+  transform: translateY(-50%); 
   color: white;
   text-align: left;
   z-index: 2;
@@ -66,9 +66,9 @@ body, html {
 
 @media (max-width: 480px) {
   .home-overlay-text {
-    top: 9%; /* Move text to the top */
-    left: 10%; /* Keep text on the left */
-    transform: translateY(0); /* Remove vertical centering adjustment */
+    top: 9%; 
+    left: 10%; 
+    transform: translateY(0); 
     font-size: 1.2rem;
   }
 

@@ -84,11 +84,11 @@ const Ytvid = () => {
 
     const getPlayerOpts = () => {
         if (window.innerWidth <= 480) {
-            return { width: '100%', height: '200' }; // Adjust height accordingly
+            return { width: '100%', height: '200' }; 
         } else if (window.innerWidth <= 768) {
-            return { width: '100%', height: '300' }; // Adjust height accordingly
+            return { width: '100%', height: '300' }; 
         } else {
-            return { width: '900', height: '500' }; // Adjust height accordingly
+            return { width: '900', height: '500' }; 
         }
     };
     

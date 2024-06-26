@@ -12,6 +12,7 @@ import Form from './Components/Form';
 import Contact from './Components/Contact';
 import FormVidPin from './Components/FormVidPin';
 import IconFooter from './Components/IconFooter';
+import Footer from './Components/Footer';
 
 const App = () => {
   const location = useLocation();
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/iconsfoot" element={<IconFooter />} />
       </Routes>
       {location.pathname === '/' && <IconFooter />}
+      <Footer/>
     </div>
   );
 };
