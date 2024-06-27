@@ -79,24 +79,22 @@ const FormVidPin = () => {
           },
         });
         console.log('Success:', response.data);
-        // Optionally reset form fields and show success message
       } catch (error) {
         console.error('Error:', error.message);
-        // Handle error states or display error message
       }
     } else {
       console.log('Please fix the errors before submitting.');
-      // Optionally display validation errors
+      
     }
   };
 
   return (
-    <div className='uploadform'>
-      <div className="container ">
+    <div className='up'>
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-9 ">
-            <div className="form-container">
-              <h1>Please upload a video of your child brushing his/her teeth.</h1>
+            <div className="form-container ">
+              <h3>Please upload a video of your child brushing his/her teeth.</h3>
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="childName">Name of the Child:</label>

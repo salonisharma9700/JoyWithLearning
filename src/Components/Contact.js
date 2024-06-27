@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import '../cssfiles/VideoUpload.css';
+import '../cssfiles/play.css';
 
 const Contact = ({ onSubmit }) => {
     const [formData, setFormData] = useState({
@@ -81,9 +81,9 @@ const Contact = ({ onSubmit }) => {
         <div className='uploadform'>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-md-8">
+                    <div className="col-9">
                         <div className="form-container">
-                            <h1>Help us improve with your valuable feedback.</h1>
+                            <h3>Help us improve with your valuable feedback.</h3>
                             <form onSubmit={handleSubmit}>
                                 <div className={`form-group ${errors.name ? 'has-error' : ''}`}>
                                     <label htmlFor="name">Name:</label>

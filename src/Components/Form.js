@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../cssfiles/VideoUpload.css';
+import '../cssfiles/play.css';
 
 const Form = ({ onSubmit, videoResponses }) => { 
     const [formData, setFormData] = useState({

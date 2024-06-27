@@ -21,9 +21,9 @@ body, html {
   overflow: hidden;
 }
 
-.row {
-  height: 100%;
-}
+  /* .row {
+    height: 100%;
+  } */
 
 .family {
   margin-left: 10%;

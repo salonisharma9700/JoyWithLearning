@@ -19,7 +19,7 @@ const IconFooter = () => {
       </div>
       <div className="footer-col-3 footer-col-sm-2">
         <Link to="/faq" className="footer-link">
-          <strong>FAQ</strong>
+          <strong>FAQ </strong>
           <img src="images/faq.png" className="footer-icons" alt="About Icon" /><br />
         </Link>
       </div>

@@ -1,5 +1,5 @@
 .footer-bottom-container {
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   background-color: #f8f9fa;
@@ -11,6 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
 }
 
 .footer-col-3 {
@@ -48,6 +49,9 @@
 @media (max-width: 48rem) { 
   .footer-col-3 {
     max-width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 
@@ -56,6 +60,16 @@
   .footer-col-sm-2 {
     max-width: 100%;
   }
+}
+.footer-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-icons {
+  display: inline-block;
+  margin: 0 0.5rem; 
 }
 
 
@@ -71,6 +85,7 @@
 .navbar-container {
   width: 100%;
   background-color: #f8f9fa;
+
 }
 
 .navbar {
