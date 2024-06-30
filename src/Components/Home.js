@@ -9,7 +9,7 @@ const Home = () => {
         <div className='ho' col-15 col-sm-3>
         <img src="images/dyslexiafinal.jpg" alt="Background" className="home-background-image" />
         </div>  
-        <div className="home-overlay-text"  fw-bold   >
+        <div className="home-overlay-text" text-black fw-bold   >
           <p>Supporting</p>
           <p>Your Journey with</p>
           <p>Autism and Dyslexia</p>

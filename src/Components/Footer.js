@@ -9,7 +9,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="pt-lg-10 pt-5 footer bg-white text-center">
+    <div className="pt-lg-10 pt-5 footer bg-white text-black text-center">
     
       <p>{`© ${year} KMIT. All Rights Reserved.`}</p>
       

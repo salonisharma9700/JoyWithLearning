@@ -82,16 +82,18 @@ const Contact = ({ onSubmit }) => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-9">
-                        <div className="form-container">
-                            <h3>Help us improve with your valuable feedback.</h3>
-                            <form onSubmit={handleSubmit}>
-                                <div className={`form-group ${errors.name ? 'has-error' : ''}`}>
+                        <div className="form-container ">
+                            <h3 className='text-center '>Help us improve with your valuable feedback.</h3>
+                            <form   className="col-12 " onSubmit={handleSubmit}>
+                                <div className={`form-group ${errors.name ? 'has-error' : ''}`} >
                                     <label htmlFor="name">Name:</label>
+                                    
                                     <input
+                                      
                                         type="text"
                                         id="name"
                                         name="name"
-                                        className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+                                        className= {`form-control ${errors.name ? 'is-invalid' : ''}mr-7`}
                                         value={formData.name}
                                         onChange={handleInputChange}
                                         placeholder="Enter your name"
@@ -127,7 +129,7 @@ const Contact = ({ onSubmit }) => {
                                     ></textarea>
                                     {errors.message && <div className="invalid-feedback">{errors.message}</div>}
                                 </div>
-                                <button type="submit" className="button">Submit</button>
+                                <button type="submit" className="button d-flex justify-content-center">Submit</button>
                             </form>
                         </div>
                     </div>
